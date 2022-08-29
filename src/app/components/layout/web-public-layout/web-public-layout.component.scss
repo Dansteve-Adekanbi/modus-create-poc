@@ -1,0 +1,26 @@
+.public-layout {
+  display: flex;
+}
+
+.public-left-side {
+  flex: 1;
+  background: url("../../../../assets/img/public-background.png"),
+    linear-gradient(150.35deg,
+      rgba(14, 195, 101, 0.3) -23.54%,
+      rgba(27, 180, 96, 0.6) -23.53%,
+      rgba(112, 78, 58, 0.6) 55%,
+      rgba(136, 50, 48, 0.6) 76.97%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.public-right-side {
+  flex: 1.25;
+  background: #fff;
+}
+
+@media (max-width: 1025px) {
+  .public-right-side {
+    flex: 1.4;
+  }
+}

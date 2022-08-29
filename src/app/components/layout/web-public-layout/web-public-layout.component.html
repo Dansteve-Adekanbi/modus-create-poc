@@ -1,0 +1,8 @@
+<div class="public-layout min-height-100">
+  <div class="public-left-side" [ngClass]="{'ion-padding-60': isDesktop, 'ion-padding-16': isDesktop} ">
+    <ng-content #leftSide select="[slot='left-side']"></ng-content>
+  </div>
+  <div class="public-right-side" [ngClass]="{'ion-padding-60': isDesktop, 'ion-padding-16': isDesktop} ">
+    <ng-content #rightSide select="[slot='right-side']"></ng-content>
+  </div>
+</div>
