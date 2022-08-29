@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Inter-Black";
+  src: url("../assets/fonts/Inter/Inter-Black.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-Black {
+  font-family: "Inter-Black";
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../assets/fonts/Inter/Inter-Bold.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-Bold {
+  font-family: "Inter-Bold";
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url("../assets/fonts/Inter/Inter-ExtraBold.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-ExtraBold {
+  font-family: "Inter-ExtraBold";
+}
+
+@font-face {
+  font-family: "Inter-ExtraLight";
+  src: url("../assets/fonts/Inter/Inter-ExtraLight.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-ExtraLight {
+  font-family: "Inter-ExtraLight";
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url("../assets/fonts/Inter/Inter-Light.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-Light {
+  font-family: "Inter-Light";
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../assets/fonts/Inter/Inter-Medium.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-Medium {
+  font-family: "Inter-Medium";
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../assets/fonts/Inter/Inter-Regular.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-Regular {
+  font-family: "Inter-Regular";
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("../assets/fonts/Inter/Inter-SemiBold.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-SemiBold {
+  font-family: "Inter-SemiBold";
+}
+
+@font-face {
+  font-family: "Inter-Thin";
+  src: url("../assets/fonts/Inter/Inter-Thin.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+}
+
+.Inter-Thin {
+  font-family: "Inter-Thin";
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  --ion-font-family: "Inter-Regular", "Inter-Medium",
+    "Inter-Bold", sans-serif;
+  --ion-default-font: "Inter-Regular", "Inter-Medium",
+    "Inter-Bold", sans-serif;
+  font-family: var(--ion-font-family);
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+
+  --ion-app-font-black: "Inter-Black";
+  --ion-app-font-bold: "Inter-Bold";
+  --ion-app-font-extra-bold: "Inter-ExtraBold";
+  --ion-app-font-extra-light: "Inter-ExtraLight";
+  --ion-app-font-light: "Inter-Light";
+  --ion-app-font-medium: "Inter-Medium";
+  --ion-app-font-regular: "Inter-Regular";
+  --ion-app-font-semi-bold: "Inter-SemiBold";
+  --ion-app-font-thin: "Inter-Thin";
+}
