@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { WebPublicLayoutComponent } from './web-public-layout.component';
+import { PublicLayoutComponent } from './public-layout.component';
 
-describe('WebPublicLayoutComponent', () => {
-  let component: WebPublicLayoutComponent;
-  let fixture: ComponentFixture<WebPublicLayoutComponent>;
+describe('PublicLayoutComponent', () => {
+  let component: PublicLayoutComponent;
+  let fixture: ComponentFixture<PublicLayoutComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ WebPublicLayoutComponent ],
+      declarations: [PublicLayoutComponent],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(WebPublicLayoutComponent);
+    fixture = TestBed.createComponent(PublicLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

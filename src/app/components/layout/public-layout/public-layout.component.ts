@@ -5,13 +5,13 @@ import { ScreenSizeService } from '@app-services/screen-size/screen-size.service
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-web-public-layout',
-  templateUrl: './web-public-layout.component.html',
-  styleUrls: ['./web-public-layout.component.scss'],
+  selector: 'app-public-layout',
+  templateUrl: './public-layout.component.html',
+  styleUrls: ['./public-layout.component.scss'],
 })
-export class WebPublicLayoutComponent implements OnInit {
+export class PublicLayoutComponent implements OnInit {
 
-  isPwa: Readonly<boolean>;
+  readonly isPwa: Readonly<boolean> = environment.isPwa;
   isDesktop: boolean;
 
   constructor(
@@ -19,16 +19,14 @@ export class WebPublicLayoutComponent implements OnInit {
     public navController: NavController,
     public router: Router,
   ) {
-    this.isPwa = environment.isPwa;
+
     this.screenSizeService.isDesktopView().subscribe(isDesktop => {
-      console.log('isDesktop', isDesktop);
-      if (this.isDesktop && !isDesktop) {
-        // window.location.reload();
-      }
       this.isDesktop = isDesktop;
     });
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    //noop
+  }
 
 }

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { WebPublicLayoutComponent } from './web-public-layout/web-public-layout.component';
+import { PublicLayoutComponent } from './public-layout/public-layout.component';
 
 @NgModule({
   imports: [
@@ -11,10 +11,10 @@ import { WebPublicLayoutComponent } from './web-public-layout/web-public-layout.
     IonicModule,
   ],
   declarations: [
-    WebPublicLayoutComponent
+    PublicLayoutComponent
   ],
   exports: [
-    WebPublicLayoutComponent
+    PublicLayoutComponent
   ]
 })
 export class SharedLayoutComponentsModule { }
