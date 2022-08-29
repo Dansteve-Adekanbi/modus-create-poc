@@ -1,4 +1,4 @@
-@for $i from 1 through 200 {
+@for $i from 1 through 100 {
   .ion-padding-top-#{$i} {
     padding-top: calc(#{$i} * 0.063rem) !important;
   }
