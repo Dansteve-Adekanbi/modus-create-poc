@@ -12,7 +12,17 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "es2020",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@app-services/*": ["src/app/services/*"],
+      "@app-environments/*": ["src/environments/*"],
+      "@app-models/*": ["src/app/models/*"],
+      "@app-mocks/*": ["src/app/mocks/*"],
+      "@app-components/*": ["src/app/components/*"],
+      "@app-directives/*": ["src/app/directives/*"],
+      "@app-pipes/*": ["src/app/pipes/*"],
+      "@app-utils/*": ["src/app/utils/*"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
