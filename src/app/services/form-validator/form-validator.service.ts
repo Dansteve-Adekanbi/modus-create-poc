@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
-import { isValidEmail, isValidName } from '@app-utils/form-validator';
+import { isValidEmail } from '@app-utils/form-validator';
 
 @Injectable({
   providedIn: 'root'
@@ -8,22 +8,6 @@ import { isValidEmail, isValidName } from '@app-utils/form-validator';
 export class FormValidatorService {
   constructor(
   ) { }
-
-  public static firstNameValidator(control: AbstractControl) {
-    if (isValidName(control)) {
-      return null;
-    } else {
-      return { invalidFirstName: true };
-    }
-  }
-
-  public static lastNameValidator(control: AbstractControl) {
-    if (isValidName(control)) {
-      return null;
-    } else {
-      return { invalidLastName: true };
-    }
-  }
 
   public static emailValidator(control: AbstractControl) {
     if (control.value && isValidEmail(control)) {
